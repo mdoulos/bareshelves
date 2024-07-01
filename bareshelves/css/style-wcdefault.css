@@ -1,0 +1,409 @@
+/* 
+Default WooCommerce Styles
+
+This file defines default styles for woocommerce pages on the front end.
+*/
+
+.woocommerce-breadcrumb a, .woocommerce-breadcrumb {
+    color: #767676;
+    text-decoration: none;
+    font-size: 12px !important;
+    margin-top: 0.5rem;
+}
+
+/* ---------------------------------------------------------- Shop Archive Page ---*/
+
+.shop-page h1 {
+    margin: 0;
+    color: #000000;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.shop-page.flex-row {
+    margin-top: 1rem;
+    padding-bottom: 7rem;
+}
+
+/* --- Sidebar ---*/
+
+.shop-sidebar-wrapper {
+    width: 25%;
+    min-width: 300px;
+    background: white;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+}
+
+.shop-sidebar {
+    background-color: white;
+}
+
+.shop-sidebar h2 {
+    font-weight: 800;
+    font-size: 1.25rem;
+    background-color: #e7e7e7;
+    border-radius: 3px 3px 0 0;
+    padding: 0.5rem;
+    margin: 0;
+}
+
+.shop-page-categories-nav {
+    padding: 1rem 0;
+}
+
+.shop-page-categories-nav li {
+    position: relative;
+}
+
+.toplevel_catlist {
+    list-style: none;
+    margin: 0;
+    margin-top: 0.25rem;
+}
+
+.this-cat:before {
+    content: '';
+    position: absolute;
+    left: -14px;
+    top: 6px;
+    width: 0;
+    height: 0;
+    border-left: 7px solid #e7e7e7;
+    border-bottom: 7px solid transparent;
+    border-top: 7px solid transparent;
+    clear: both;
+}
+
+.sub_catlist .this-cat:before {
+    top: 11px;
+}
+
+.shop-sidebar ul {
+    margin-left: 1.5rem;
+}
+
+.secondlevel_catlist {
+    list-style: none;
+    margin: 0;
+    margin-left: 2rem;
+}
+
+.secondlevel_catlist li {
+    border-bottom: 1px solid #EEE;
+    margin: 0;
+    margin-right: 1rem;
+}
+
+.secondlevel_catlist li:nth-of-type(1) {
+    border-top: 1px solid #EEE;
+    margin-top: 0.5rem;
+}
+
+.secondlevel_catlist li, .secondlevel_catlist li a {
+    padding: 0.25rem 0;
+}
+
+.sub_catlist li a span {
+    font-size: 14px;
+    top: -1px;
+    position: relative;
+}
+
+.secondlevel_catlist li:last-of-type {
+    margin-bottom: 0.5rem;
+}
+
+/* --- Product Grid ---*/
+
+.shop-archive-pre {
+    justify-content: space-between;
+}
+
+.shop-archive-pre .woocommerce-result-count {
+    margin: auto auto auto 0 !important;
+    padding: 1rem 0;
+}
+
+.shop-archive-pre .woocommerce-ordering {
+    margin: auto 0 auto auto;
+}
+
+.shop-archive-pre select.orderby {
+    padding: 0.5rem;
+    background-color: #F9F9F9;
+}
+
+.shop-content {
+    padding: 0 1rem 0 2.5rem;
+    width: 75%;
+}
+
+.shop-page-loop {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+    gap: 5px;
+    padding: 0;
+    margin: 0;
+}
+
+.shop-page-loop::before, .shop-page-loop::after {
+    content: none !important;
+}
+
+.shop-product-li {
+    background: white;
+    border: 1px solid #CCC;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+}
+
+.shop-product-link {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.shop-product-link span.price {
+    margin: 10px 0 20px 0;
+}
+
+.woocommerce-loop-product__title {
+    font-size: 18px;
+    text-align: center;
+    color: #333;
+    font-weight: 600;
+    margin-top: 12px;
+}
+
+.shop-product-link bdi {
+    font-size: 20px;
+    color: var(--light-orange);
+    font-weight: 700;
+}
+
+.shop-product-sku {
+    font-size: 14px;
+    color: #999;
+}
+
+.shop-product-stock {
+    color: green !important;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.shop-archive-post .woocommerce-result-count {
+    margin-left: auto !important;
+    padding-right: 3px;
+}
+
+/* ---------------------------------------------------------- Shop Product Page ---*/
+
+/* --- Product Gallery ---*/
+
+.product-page-media {
+    width: 60%;
+    padding-right: 1rem;
+    z-index: 1;
+    position: relative;
+}
+
+.product-page-media-inner {
+    position: sticky;
+    top: 10rem;
+}
+
+.woocommerce-product-gallery__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.woocommerce-product-gallery__image-section {
+    width: 100%;
+}
+
+.sticky-image-container {
+    position: sticky;
+    top: 10rem;
+}
+
+.img-magnifier-container {
+    position: relative;
+}
+
+.wc-product-gallery-primary {
+    position: relative;
+    margin: 0;
+}
+
+.img-magnifier-glass {
+    position: absolute;
+    border: 3px solid #000;
+    cursor: none;
+    width: 200px;
+    height: 200px;
+}
+
+.woocommerce-product-gallery__thumbnail-section {
+    margin-right: 0.25rem;
+}
+
+.woocommerce-product-gallery__image-thumbnail-list {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+
+.wc-gallery-active-thumbnail {
+    border: 2px solid blue;
+    box-shadow: 1px 1px 2px #ddd;
+}
+
+.woocommerce-product-gallery__image-thumbnail {
+    border: 1px solid #BBB;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    margin: 0.2rem 0.1rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.woocommerce-product-gallery__image-thumbnail img {
+    margin: auto;
+}
+
+/* --- Product Summary ---*/
+
+.product_title {
+    color: #000000;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.woocommerce-Price-amount bdi {
+    color: #C92626;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.entry-summary .in-stock {
+    font-size: 1.2rem;
+    margin: 0 0 0.4rem 0;
+    color: green !important;
+    font-weight: 700;
+}
+
+/* --- Information Tabs ---*/
+
+.wc-tabs {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    padding-left: 1rem;
+}
+
+.woocommerce-tabs ul.tabs li {
+    border: 1px solid #d3ced2;
+    background-color: #ebe9eb;
+    padding: 0.5rem 0.75rem;
+    display: inline-block;
+    position: relative;
+    z-index: 0;
+    border-radius: 4px 4px 0 0;
+    margin: 0 -5px;
+}
+
+.woocommerce-tabs ul.tabs li.active {
+    background: #fff;
+    z-index: 2;
+    border-bottom-color: #fff;
+}
+
+.woocommerce-tabs ul.tabs li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 700;
+    padding: 0.5rem;
+}
+
+.woocommerce-tabs ul.tabs li.active a {
+    color: black;
+}
+
+.woocommerce-Tabs-panel {
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%) !important;
+    padding: 20px;
+    border-radius: 2px;
+    border-width: 0;
+    border-top: 1px solid #d3ced2;
+    background-color: white;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin: -1px 0 0;
+}
+
+
+/* --- Related Products ---*/
+
+.product-page-related-products {
+    margin: 2rem 0 3rem 0;
+}
+
+.product-page-related-products > h2 {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 1rem;
+    padding-left: 3px;
+}
+
+.product-page-related-products-list {
+    min-height: 300px;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+}
+
+.product-page-related-products-list li {
+    display: flex;
+    max-width: 250px;
+    width: 250px;
+    background-color: white;
+    border: solid 1px #DDD;
+    border-radius: 8px;
+}
+
+.product-page-related-products-list a {
+    padding: 0.75rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-page-related-products-list img {
+    margin: auto;
+}
+
+.product-page-related-products-list h2 {
+    margin: auto;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}
+
+.product-page-related-products-list .price {
+    margin: auto;
+    padding-top: 0.5rem;
+}
+
+.product-page-related-products-list bdi {
+    font-size: 15px;
+}
